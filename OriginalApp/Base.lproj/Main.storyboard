@@ -18,7 +18,7 @@
         <!--View Controller-->
         <scene sceneID="dje-XT-j7N">
             <objects>
-                <viewController id="etA-Js-kya" customClass="ViewController" customModule="OriginalApp_kishimoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="etA-Js-kya" customClass="ViewController" customModule="OriginalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TVq-Dj-OjO" customClass="HomeViewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,9 +34,6 @@
                                     <fontDescription key="titleFontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="3bg-U3-gPf" kind="show" id="4JG-H4-Fqa"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LiT二倍楽しめる（仮）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-kq-8Q6">
                                 <rect key="frame" x="28" y="224" width="320" height="155"/>
@@ -54,12 +51,12 @@
             </objects>
             <point key="canvasLocation" x="-11.450381679389313" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Challenge View Controller-->
         <scene sceneID="bzX-bs-J9W">
             <objects>
-                <viewController id="3bg-U3-gPf" sceneMemberID="viewController">
+                <viewController id="3bg-U3-gPf" customClass="ChallengeViewController" customModule="OriginalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l2X-dc-1f2" customClass="ChallenteViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="546-cg-RUO">
@@ -113,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="829.7709923664122" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Message View Controller-->
         <scene sceneID="U5T-QM-XQX">
             <objects>
-                <viewController id="6Ng-nC-ERI" sceneMemberID="viewController">
+                <viewController id="6Ng-nC-ERI" customClass="MessageViewController" customModule="OriginalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="beu-dC-JHJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +127,9 @@
                                     <fontDescription key="titleFontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="24"/>
                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.93725490199999995" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="back" destination="6Ng-nC-ERI" eventType="touchUpInside" id="Rie-J3-Us3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メッセージ（小）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-wz-ZTd">
                                 <rect key="frame" x="87" y="360" width="219" height="21"/>
@@ -149,6 +149,10 @@
                         <viewLayoutGuide key="safeArea" id="FV9-MR-vfN"/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.93725490199999995" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="bigmessagelabel" destination="M9G-sO-GHi" id="DRH-uv-ejD"/>
+                        <outlet property="smallmessagelabel" destination="mRy-wz-ZTd" id="9G1-OE-6v2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOZ-TU-n90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1DD0492A5DD26E00E80990 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DD0482A5DD26E00E80990 /* ChallengeViewController.swift */; };
+		2B1DD04B2A5DD29900E80990 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DD04A2A5DD29900E80990 /* MessageViewController.swift */; };
 		2B42C5612A5589B8004D1E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42C5602A5589B8004D1E28 /* AppDelegate.swift */; };
 		2B42C5632A5589B8004D1E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42C5622A5589B8004D1E28 /* SceneDelegate.swift */; };
 		2B42C5652A5589B8004D1E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42C5642A5589B8004D1E28 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1DD0482A5DD26E00E80990 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		2B1DD04A2A5DD29900E80990 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		2B42C55D2A5589B8004D1E28 /* OriginalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B42C5602A5589B8004D1E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B42C5622A5589B8004D1E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				2B42C5602A5589B8004D1E28 /* AppDelegate.swift */,
 				2B42C5622A5589B8004D1E28 /* SceneDelegate.swift */,
 				2B42C5642A5589B8004D1E28 /* ViewController.swift */,
+				2B1DD0482A5DD26E00E80990 /* ChallengeViewController.swift */,
+				2B1DD04A2A5DD29900E80990 /* MessageViewController.swift */,
 				2B42C5662A5589B8004D1E28 /* Main.storyboard */,
 				2B42C5692A5589B9004D1E28 /* Assets.xcassets */,
 				2B42C56B2A5589B9004D1E28 /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				2B42C5652A5589B8004D1E28 /* ViewController.swift in Sources */,
 				2B42C5612A5589B8004D1E28 /* AppDelegate.swift in Sources */,
+				2B1DD0492A5DD26E00E80990 /* ChallengeViewController.swift in Sources */,
 				2B42C5632A5589B8004D1E28 /* SceneDelegate.swift in Sources */,
+				2B1DD04B2A5DD29900E80990 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
