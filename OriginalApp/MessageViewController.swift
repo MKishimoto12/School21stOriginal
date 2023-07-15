@@ -21,7 +21,11 @@ class MessageViewController: UIViewController {
     }
     //popさせて最初の画面に戻したい
     @IBAction func back(){
-        //なんちゃらかんちゃら
+        // PopしたいViewControllerのインスタンスを取得する
+        if let homeViewController = navigationController?.viewControllers.first(where: { $0 is ViewController }) {
+            // Popを実行する
+            navigationController?.popToViewController(homeViewController, animated: true)
+        }
     }
 
     /*
