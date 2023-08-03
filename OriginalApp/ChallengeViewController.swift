@@ -10,20 +10,17 @@ import UIKit
 class ChallengeViewController: UIViewController {
     
     //ミッションの配列
-    let missionarray = ["隣の席の子に話しかけよう","メンターにマイブームを聞こう","隣の子に今日の出来事を話そう","メンターに生活の愚痴を話そう","３人に名前を聞こう","5人に名前を聞こう"]//元の配列
+    let missionarray = ["隣の席の子に話しかけよう★★☆☆☆","メンターにマイブームを聞こう★★☆☆☆","隣の子に今日の出来事を話そう★★★☆☆","メンターに生活の愚痴を話そう★★☆☆☆","３人に名前を聞こう★★☆☆☆","隣の子と共通の趣味を探そう★★★★☆","メンターに悩みを相談しよう★★★★★","夕飯のメニューを考えてもらおう★★☆☆☆"]//元の配列
     lazy var missiondecidearray = missionarray.shuffled()
     //ミッション（ラベル関連）
     @IBOutlet var mission0label : UILabel! //配列0番地
     @IBOutlet var mission1label : UILabel! //配列1番地
     @IBOutlet var mission2label : UILabel! //配列2番地
     
-    @IBOutlet var button0: UIButton!//これこの後一旦保留
-    
     //これから作る、ボタンの代わりにImageViewにタップ判定をつける
     @IBOutlet weak var button00 : UIImageView!
     @IBOutlet weak var button01 : UIImageView!
     @IBOutlet weak var button02 : UIImageView!
-    
     //タップした時の関数
     //@objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
     //    print("タップ")
@@ -34,8 +31,7 @@ class ChallengeViewController: UIViewController {
     //ボタンが奇数回目に押された/偶数回めに押された
     var isDone: [Bool] = [false, false, false]
     //ボタン押下時のボタンの画像
-    var image = UIImage(named: "checkmark")
-    
+    let image = UIImage(named: "checkmark")
     let unfinishedimage = UIImage(named: "unfinishedcheckmark")
     
     //missionarray.append("何か")//配列への追加
@@ -53,10 +49,11 @@ class ChallengeViewController: UIViewController {
         button00.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped)))
         
         button01.isUserInteractionEnabled = true
-        button01.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped)))
+        button01.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped1)))
         
         button02.isUserInteractionEnabled = true
-        button02.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped)))
+        button02.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped2)))
+        
         
         //開いた時にグレーのチェック
         button00.image = unfinishedimage
@@ -99,24 +96,28 @@ class ChallengeViewController: UIViewController {
         }
         print(isDone)
     }//一番左のチェックボックス
-//    @IBAction func check1(){
-//        isDone[1] = !isDone[1]
-//        if isDone[1] == true{
-//            //ボタンの見た目をチェック付きに
-//        } else {
-//            //ボタンの見た目をチェックなしに
-//        }
-//        print(isDone)
-//    }//真ん中のチェックボックス
-//    @IBAction func check2(){
-//        isDone[2] = !isDone[2]
-//        if isDone[2] == true{
-//            //ボタンの見た目をチェック付きに
-//        } else {
-//            //ボタンの見た目をチェックなしに
-//        }
-//        print(isDone)
-//    }//一番右のチェックボックス
+    @objc func imageViewTapped1(){
+        isDone[1] = !isDone[1]
+        if isDone[1] == true{
+            //ボタンの見た目をチェック付きに
+            button01.image = image
+        } else {
+            //ボタンの見た目をチェックなしに
+            button01.image = unfinishedimage
+        }
+        //        print(isDone)
+    }//真ん中のチェックボックス
+    @objc func imageViewTapped2(){
+        isDone[2] = !isDone[2]
+        if isDone[2] == true{
+            //ボタンの見た目をチェック付きに
+            button02.image = image
+        } else {
+            //ボタンの見た目をチェックなしに
+            button02.image = unfinishedimage
+        }
+        //        print(isDone)
+    }//一番右のチェックボックス
     //つぎへのところ、つぎへ→next
     @IBAction func next(){
         let messageViewController = self.storyboard?.instantiateViewController(withIdentifier: "message") as! MessageViewController

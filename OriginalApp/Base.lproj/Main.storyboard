@@ -38,10 +38,17 @@
                                     <action selector="start" destination="etA-Js-kya" eventType="touchUpInside" id="10T-PD-rjY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LiT二倍楽しめる（仮）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-kq-8Q6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="もっと楽しく" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-kq-8Q6">
                                 <rect key="frame" x="28" y="224" width="320" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="0.30980392159999998" green="0.43921568630000002" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Life is Tech!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-Vh-eMb">
+                                <rect key="frame" x="79" y="358" width="219" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
                                 <color key="textColor" red="0.30980392159999998" green="0.43921568630000002" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -105,7 +112,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" highlightedImage="unfinishedcheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-Jx-srD">
-                                <rect key="frame" x="18" y="377" width="90" height="90"/>
+                                <rect key="frame" x="18" y="381" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" highlightedImage="unfinishedcheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="5n4-n7-qtN">
+                                <rect key="frame" x="284" y="381" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" highlightedImage="unfinishedcheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="Nxf-r5-5Nx">
+                                <rect key="frame" x="151" y="381" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -116,8 +133,8 @@
                     <navigationItem key="navigationItem" id="xGx-wr-mZ9"/>
                     <connections>
                         <outlet property="button00" destination="bfa-Jx-srD" id="hrT-QP-SgC"/>
-                        <outlet property="button01" destination="l2X-dc-1f2" id="yMx-wh-oyF"/>
-                        <outlet property="button02" destination="l2X-dc-1f2" id="409-Jm-cms"/>
+                        <outlet property="button01" destination="Nxf-r5-5Nx" id="eIe-hK-qEn"/>
+                        <outlet property="button02" destination="5n4-n7-qtN" id="EC6-dQ-aUO"/>
                         <outlet property="mission0label" destination="OIR-k0-kaQ" id="al2-W1-rWA"/>
                         <outlet property="mission1label" destination="6vm-34-L81" id="nPm-bM-gmY"/>
                         <outlet property="mission2label" destination="qIW-k0-Hzg" id="Jce-PZ-BZq"/>
